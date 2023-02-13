@@ -8,4 +8,4 @@ The website also has client-side scripting and interactivity like automated year
 
 The responsive website was also tested in different browsers like Google Chrome, Internet Explorer, Mozilla Firefox and Android Phone.
 
-A live demo of the website can be view at https://daiolupo.github.io/draw-daily/
+A live demo of the website can be viewed at https://daiolupo.github.io/draw-daily/
