@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home | drawdaily365</title>
+  <!-- main styles -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- google fonts: Open Sans and Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- header start -->
+  <header>
+    <!-- top navigation -->
+    <div class="nav-container">
+      <div>
+        <a class="logo" href="index.html">
+          <img src="images/logo-image.svg" alt="">
+          <h1>rawdaily365</h1>
+        </a>
+      </div>
+      <nav class="navigation">
+        <a href="drawing.html">drawings</a>
+        <a id="selected" href="artists.html">artists</a>
+        <a href="login.html">login</a>
+        <a href="signup.html">sign up</a>
+      </nav>
+      <div class="toggleBox">
+        <a onclick="showMenu()" href="#">
+          <img class="menu" src="./images/menu.png">
+          <img class="close" src="./images/close.png">
+        </a>
+      </div>
+    </div>
+    <!-- Call to action section -->
+    <div class="hero">
+      <div class="callToAction">
+        <h1>Artists!</h1>
+        <p>We are a community of artists.</p>
+        <div class="btn-container">
+          <a href="signup.html" class="btn-sign">SIGN UP</a>
+        </div>
+        <div class="arrow">
+          <a href="#art"><img src="images/downarrow.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- main start -->
+  <main>
+    <!-- Artists section -->
+    <article id="art">
+      <h1 class="subheading">Our Community of Artists</h1>
+      <section class="container-artists">
+        <div class="draw-1">
+          <figure>
+            <img src="images/profile1.jpg" alt="">
+          </figure>
+          <h3>Charis Praz</h3>
+          <p>I just want to get better at drawing and improve my skill set by choosing to take the drawing challenge.
+            Hopefully I can become the artist that I was mean't to be. Wish me luck</p>
+        </div>
+        <div class="draw-2">
+          <figure>
+            <img src="images/profile2.jpg" alt="">
+          </figure>
+          <h3>Tania Gould</h3>
+          <p>I hail from the beautify plains of Canada Ontorio and I'm a full time photographer. My hobby is also
+            drawing so this will be a lot of fun. May the force be with me.</p>
+        </div>
+        <div class="draw-3">
+          <figure>
+            <img src="images/profile3.jpg" alt="">
+          </figure>
+          <h3>Dosmond Olsen</h3>
+          <p>A cool dude who is just trying to make a living from art and get some practice in as well. Praying that it
+            all comes together and I get some much needed skills.</p>
+        </div>
+        <div class="draw-4">
+          <figure>
+            <img src="images/profile4.jpg" alt="">
+          </figure>
+          <h3>Latar Ghray</h3>
+          <p>I'm a beginner at drawing and I think I want to be a professional drawer or something similar. You never
+            know where this might take me but fingers crossed, I'm putting in the work. Wish me luck yall!</p>
+        </div>
+        <div class="draw-5">
+          <figure>
+            <img src="images/profile5.jpg" alt="">
+          </figure>
+          <h3>Andy Lotu</h3>
+          <p>Born and raised in United States, I moved to Europe to study Visual Arts and Illustration design. I studied
+            at the School of Arts in London and spent my years exhibiting at local cafes and galleries. I wanted to
+            brush up on some drawings skills and I'm so glad to take up the drawing challenge.</p>
+        </div>
+        <div class="draw-6">
+          <figure>
+            <img src="images/profile6.jpg" alt="">
+          </figure>
+          <h3>Ruby Andrews</h3>
+          <p>Hello there, I'm Ruby and I'm glad I've found this community of artists to share my work and collaborate
+            with other artists. My thing is to get better at drawing and learn a few new things a long the way.</p>
+        </div>
+      </section>
+    </article>
+  </main>
+  <!-- main end -->
+  <!-- Bottom footer section -->
+  <footer>
+    <a href="index.html" class="copy-right latest-date"></a>
+    <a href="#">Terms</a>
+    <a href="contact.html">Contact us</a>
+    <a href="#">Policy</a>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home | drawdaily365</title>
+  <!-- main styles -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- google fonts: Open Sans and Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="plain-bg">
+  <!-- header start -->
+  <header>
+    <!-- top navigation -->
+    <div class="nav-container">
+      <div>
+        <a class="logo" href="index.html">
+          <img src="images/logo-image.svg" alt="">
+          <h1>rawdaily365</h1>
+        </a>
+      </div>
+      <nav class="navigation">
+        <a href="drawing.html">drawings</a>
+        <a href="artists.html">artists</a>
+        <a href="login.html">login</a>
+        <a id="selected" href="signup.html">sign up</a>
+      </nav>
+      <div class="toggleBox">
+        <a onclick="showMenu()" href="#">
+          <img class="menu" src="./images/menu.png">
+          <img class="close" src="./images/close.png">
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- main start -->
+  <main>
+    <!-- Popular drawing section -->
+    <article>
+      <h1 class="subheading">Join drawdaily365</h1>
+      <div class="mail">
+
+        <h1>Sign up</h1>
+
+        <form name="signupForm" action="thanks.html">
+
+          <ul>
+            <li>
+              <label for="fname">First Name:</label>
+              <input type="text" name="fname" id="fname">
+            </li>
+
+            <li>
+              <label for="lname">Last Name:</label>
+              <input type="text" name="lname" id="lname">
+            </li>
+
+            <li>
+              <label for="emailAddress">Email:</label>
+              <!-- 
+                                regular expression will match pattern inside a string.
+                                dot (.):
+                                1. Match any single charaters except line terminators: \n, \r, \u2028
+                                   eg, /.y/ -- mtaches 'my', 'ay', but not 'yellow'
+                                
+                                plus (+):
+                                1. match the preceding item 1 or more times
+                                eg, /a+/ -- 'candy', 'caaaady',
+                             -->
+              <input type="email" name="emailAddress" id="emailAddress" pattern='.+@gmail\.com' required>
+              <small>Format: xxx@gmail.com</small>
+            </li>
+
+            <li>
+              <label for="phone">Enter your phone number:</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{5}" required>
+              <small>Format: 021-023-87235</small>
+            </li>
+
+            <li>&nbsp;</li>
+
+            <li class="validate">
+
+              <input type="submit" name="validate" id='validate' value="signup" />
+
+            </li>
+
+            <li>&nbsp;</li>
+
+          </ul>
+
+        </form>
+
+      </div>
+
+    </article>
+
+  </main>
+  <!-- main end -->
+  <!-- Bottom footer section -->
+  <footer>
+    <a href="index.html" class="copy-right latest-date"></a>
+    <a href="#">Terms</a>
+    <a href="contact.html">Contact us</a>
+    <a href="#">Policy</a>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

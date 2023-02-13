@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home | drawdaily365</title>
+  <!-- main styles -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- google fonts: Open Sans and Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- header start -->
+  <header>
+    <!-- top navigation -->
+    <div class="nav-container">
+      <div>
+        <a class="logo" href="index.html">
+          <img src="images/logo-image.svg" alt="">
+          <h1>rawdaily365</h1>
+        </a>
+      </div>
+      <nav class="navigation">
+        <a id="selected" href="drawing.html">drawings</a>
+        <a href="artists.html">artists</a>
+        <a href="login.html">login</a>
+        <a href="signup.html">sign up</a>
+      </nav>
+      <div class="toggleBox">
+        <a onclick="showMenu()" href="#">
+          <img class="menu" src="./images/menu.png">
+          <img class="close" src="./images/close.png">
+        </a>
+      </div>
+    </div>
+    <!-- Call to action section -->
+    <div class="hero">
+      <div class="callToAction">
+        <h1>Drawings</h1>
+        <p>Check out our daily drawings.</p>
+        <div class="btn-container">
+          <a href="signup.html" class="btn-sign">SIGN UP</a>
+        </div>
+        <div class="arrow">
+          <a href="#draw"><img src="images/downarrow.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- main start -->
+  <main>
+    <!-- Daily Drawings Section -->
+    <article id="draw">
+      <h1 class="subheading">Daily Drawings</h1>
+      <section class="container-daily">
+        <div class="draw-1">
+          <figure>
+            <img src="images/drawing7.png" alt="">
+          </figure>
+          <p><strong>Cartoony sketch</strong><br>
+            Pen on Paper 2021
+            <br>By Andy Lotu
+          </p>
+        </div>
+        <div class="draw-2">
+          <figure>
+            <img src="images/drawing8.png" alt="">
+          </figure>
+          <p><strong>Cry of the Tiger II</strong><br>
+            Pen on Paper 2021
+            <br>By Charis Praz
+          </p>
+        </div>
+        <div class="draw-3">
+          <figure>
+            <img src="images/drawing9.png" alt="">
+          </figure>
+          <p><strong>Untitled</strong><br>
+            Pencil on Paper 2020
+            <br>By Tania Gould
+          </p>
+        </div>
+        <div class="draw-4">
+          <figure>
+            <img src="images/drawing10.png" alt="">
+          </figure>
+          <p><strong>Bird and Man</strong><br>
+            Pen and Ink on Paper 2021
+            <br>By Dosmond Olsen
+          </p>
+        </div>
+        <div class="draw-5">
+          <figure>
+            <img src="images/drawing11.png" alt="">
+          </figure>
+          <p><strong>Tree in the Shadows</strong><br>
+            Biro pen on paper 2021
+            <br>By Latar Ghray
+          </p>
+        </div>
+        <div class="draw-6">
+          <figure>
+            <img src="images/drawing12.png" alt="">
+          </figure>
+          <p><strong>Creators Touch</strong><br>
+            Pencil on paper 2021
+            <br>By Ruby Andrews
+          </p>
+        </div>
+      </section>
+    </article>
+  </main>
+  <!-- main end -->
+  <!-- Bottom footer section -->
+  <footer>
+    <a href="index.html" class="copy-right latest-date"></a>
+    <a href="#">Terms</a>
+    <a href="contact.html">Contact us</a>
+    <a href="#">Policy</a>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,458 @@
+/*
+Draw Daily 365 website stylesheet
+filename: main.css
+
+Author: Dwain Aiolupotea
+Date: 22 September 2021
+updated: 24 September 2021
+*/
+
+/* 
+GOOGLE FONTS
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+/* GENERAL STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* TOP NAVIGATION */
+
+.nav-container {
+  background-color: rgb(0, 0, 0);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid red;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.logo a:hover {
+  color: #a80303;
+}
+
+nav.navigation {
+  display: none;
+}
+
+nav.navigation.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+}
+
+nav.navigation.active a {
+  padding: 1.5rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a#selected {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav.navigation a:hover {
+  color: rgb(211, 211, 211);
+}
+
+.toggleBox a img {
+  filter: invert(1);
+}
+
+img.menu.hide {
+  display: none;
+}
+
+img.close {
+  display: none;
+}
+
+img.close.show {
+  display: flex;
+}
+
+/* CALL TO ACTION SECTION */
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/drawing.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 35rem;
+}
+
+.callToAction {
+  color: white;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.callToAction p {
+  font-size: 2vw;
+}
+
+.btn-container {
+  margin-top: 3rem;
+}
+
+.btn-sign {
+  border: 0.1rem solid rgb(255, 0, 0);
+  border-radius: 0.5rem;
+  padding: 0.8rem 2.5rem;
+  text-decoration: none;
+  color: #fafafa;
+  transition: background-color 0.5s;
+}
+
+.btn-home {
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  color: #fafafa;
+  background-color: rgb(255, 0, 0);
+}
+
+.btn-sign:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+/* DOWN ARROW ANIMATION */
+
+.arrow {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4vw;
+  margin: 0;
+  padding: 0;
+}
+
+.subheading {
+  font-size: 2rem;
+  border-top: 0.2rem solid #ebebeb;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding-top: 3rem;
+  margin: 0;
+}
+
+/* SECTION STYLES */
+
+section {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 0 1rem 4rem 1rem;
+}
+
+article:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* IMAGES SECTION */
+
+[class^="container-"] figure {
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  border-radius: 0.5rem;
+}
+
+[class^="container-"] figure img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.container-artists figure img {
+  width: 20rem;
+  border-radius: 50%;
+}
+
+[class^="container-"] p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem 5rem;
+  text-align: center;
+}
+
+.container-artists p {
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0 3.2rem;
+  max-width: 500px;
+}
+
+[class^="container-"] h3 {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* PROFILE */
+.profile-main {
+  background-color: #fafafa;
+}
+.profile {
+  margin: 5rem auto;
+  max-width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile figure img {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.profile h1 {
+  font-size: 2.6rem;
+}
+
+.profile p {
+  max-width: 100%;
+  font-size: 1rem;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* SIGN UP FORM */
+
+form li {
+  list-style-type: none;
+  font-size: 1rem;
+}
+
+.mail {
+  margin: 0.9rem auto 50vh;
+  padding: 2rem;
+  width: 500px;
+  background: rgb(250, 250, 250);
+  border-radius: 2%;
+}
+
+input {
+  font-size: 1.4rem;
+  padding: 0.5rem;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(243, 243, 243);
+}
+
+input validate {
+  font-size: 0.5rem;
+}
+
+.rq {
+  color: #ff0000;
+  font-size: 10pt;
+}
+
+label {
+  display: block;
+  font: 1rem "Fira Sans", sans-serif;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-size: 1.3rem;
+  color: white;
+  background-color: red;
+}
+
+/* FORM BACKGROUND */
+.plain-bg {
+  background-color: #e7e7e7;
+}
+
+.login form {
+  margin: 0.9rem auto 50vh;
+  padding: 1rem;
+  width: 320px;
+  background: rgb(250, 250, 250);
+  border-radius: 2%;
+}
+
+/* FOOTER */
+
+footer {
+  border-top: 0.2rem solid #ebebeb;
+  height: 12rem;
+  background-color: #fafafa;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #767676;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.copy-right {
+  color: #767676;
+  font-size: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1920px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/draw-extralarge.png");
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .callToAction {
+    height: 50vh;
+  }
+  .profile {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  nav.navigation {
+    display: flex;
+  }
+
+  nav.navigation a {
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  div.toggleBox {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 20rem;
+  }
+
+  .callToAction {
+    height: 30vh;
+  }
+
+  .button {
+    margin-top: 0;
+  }
+
+  section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  [class^="container-"] p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .copy-right {
+    padding-left: 3.8rem;
+  }
+
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/drawing-small.png");
+  }
+  section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer a {
+    padding: 1rem;
+  }
+
+  .copy-right {
+    text-align: center;
+    padding-left: 1rem;
+  }
+}
