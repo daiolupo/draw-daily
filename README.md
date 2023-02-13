@@ -7,3 +7,5 @@ The purpose of the website is to create a simple social media website for artist
 The website also has client-side scripting and interactivity like automated year date object, responsive navigation menu.
 
 The responsive website was also tested in different browsers like Google Chrome, Internet Explorer, Mozilla Firefox and Android Phone.
+
+A live demo of the website can be view at https://daiolupo.github.io/draw-daily/
